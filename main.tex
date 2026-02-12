@@ -1,0 +1,307 @@
+\documentclass[A4,11pt]{article}
+%\documentclass[letterpaper,11pt]{article} %For use in US
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+
+%-----FONT OPTIONS-------------------------------------------------------------
+% serif
+%  \usepackage{palatino}
+\usepackage{times} %This is the default as well
+% \usepackage{charter}
+
+% sans-serif
+% \usepackage{helvet}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+%-----PAGE SETUP---------------------------------------------------------------
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-1cm}
+\addtolength{\evensidemargin}{-1cm}
+\addtolength{\textwidth}{2cm}
+\addtolength{\topmargin}{-1cm}
+\addtolength{\textheight}{2cm}
+
+\newif\ifen
+\newif\ifsv
+
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\sv}[1]{\ifsv#1\fi}
+
+\entrue
+
+% Margins for US Letter size
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-----CUSTOM COMMANDS FOR FORMATTING SECTIONS----------------------------------
+\newcommand{\CVItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CVSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{\small#1} & \text{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubItem}[1]{\CVItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------------------------------------------
+% CV STARTS HERE  %
+%------------------------------------------------------------------------------
+\begin{document}
+
+%-----HEADING------------------------------------------------------------------
+\begin{minipage}[c]{0.39\textwidth}
+    \textbf{\Huge \scshape{Simon Sjöling}} \\ \vspace{2pt}\\
+    % \scshape sets small capital letters, remove if desired
+    \small{Telefon: 076 346 76 49}\\
+    \href{mailto:simonsjoling@hotmail.com}{Mail: simonsjoling@hotmail.com}\\
+    \small{Adress: Gibraltarkroken 4, Göteborg, }\\
+    % \small{Personnmr: 010330-4713}\\
+    \href{https://github.com/Dualsub}{GitHub: https://github.com/Dualsub}\\
+    \href{https://www.linkedin.com/in/simon-sjoling/}{LinkedIn: linkedin.com/simon-sjoling/}
+\end{minipage}
+\begin{minipage}[c]{0.39\textwidth}
+    \-\
+\end{minipage}
+% \begin{minipage}[c]{0.2\textwidth}
+% \begin{tikzpicture}
+%     \clip (0,0) circle (1.75cm);
+%     \node at (.06,-.3) {\includegraphics[width = 3.6cm]{profilbild.jpg}}; 
+%     % if necessary the picture may be moved by changing the at (coordinates)
+%     % width defines the 'zoom' of the picture
+% \end{tikzpicture}
+% \end{minipage}
+
+% Without picture
+%\begin{center}
+%    \textbf{\Huge \scshape Charles Rambo} \\ \vspace{1pt} %\scshape sets small capital letters, remove if desired
+%    \small +1 123-456-7890 $|$ 
+%    \href{mailto:you@provider.com}{\underline{you@provider.com}} $|$\\
+%    % Be sure to use a professional *personal* email address
+%    \href{https://linkedin.com/in/your-name-here}{\underline{linkedin.com/in/charles-rambo}} $|$
+%    % you should adjust you linked in profile name to be professional and recognizable
+%    \href{https://github.com/fizixmastr}{\underline{github.com/fizixmastr}}
+%\end{center}
+
+
+
+%-----EDUCATION----------------------------------------------------------------
+\section{\sv{Utbilding}\en{Education}}
+\CVSubHeadingListStart
+%    \CVSubheading % Example
+%      {Degree Achieved}{Years of Study}
+%      {Institution of Study}{Where it is located}
+\CVSubheading
+{{\sv{}\en{Data Science and AI} $|$ \emph{\small{\sv{Civilingenjör}\en{Master of Science}}}}}{Aug. 2024 -- \sv{nu}\en{now}}
+{\sv{Chalmers Tekniska Högskola}\en{Chalmers University of Technology}}{\sv{Göteborg}\en{Gothenburg}}\
+% \CVItemListStart
+%   \CVItem{\sv{}\en{Coursework: Applied Machine Learning; Design of AI Systems; Nonlinear Optimisation; Partial Differential Equations; Image Analysis; Introduction to Data Science & AI.}}
+% \CVItemListEnd
+\CVSubheading
+{{\sv{Elektroteknik}\en{Electrical Engineering} $|$ \emph{\small{\sv{Civilingenjör}\en{Master of Science in Engineering}}}}}{Aug. 2020 -- \sv{nu}\en{now}}
+{\sv{Chalmers Tekniska Högskola}\en{Chalmers University of Technology}}{\sv{Göteborg}\en{Gothenburg}}\
+\CVItemListStart
+\CVItem{\sv{}\en{B.Sc. thesis: Design, Manufacturing and Testing of 5G Antenna.}}
+\CVItemListEnd
+% \CVSubheading
+%   {{\sv{Naturvetenskapliga programmet}\en{Science program} $|$ \emph{\small{\sv{Inrikting: Natur}\en{Secondary school}}}}}{Aug. 2017 -- Juni 2020}
+%   {Birger Sjöberg-gymnasiet}{Vänersborg}\
+\CVSubHeadingListEnd
+
+%-----WORK EXPERIENCE----------------------------------------------------------
+\begin{comment}
+try to briefly explain what you did and why it is relevant to the position you
+are seeking
+\end{comment}
+
+\section{\sv{Arbetsefarenhet}\en{Work experience}}
+\CVSubHeadingListStart
+%    \CVSubheading %Example
+%      {What you did}{When you worked there}
+%      {Who you worked for}{Where they are located}
+%      \CVItemListStart
+%        \CVItem{Why it is important to this employer}
+%      \CVItemListEnd
+
+% \CVSubheading
+%   {Ericsson}{\en{Jun.}\sv{Juni} 2025 -- \en{Aug.}\sv{Augusti} 2025}
+%   {\sv{Mjukvareutvecklare pratikant}\en{Summer R\&D Internship}}{\sv{Göteborg}\en{Gothenburg}}
+% \CVItemListStart
+%   \CVItem{\sv{Utvecklade frontend}\en{Developed software for configuration management of private 5G networks.}}
+% \CVItemListEnd
+\CVSubheading
+{Ericsson}{\en{Aug.}\sv{Augusti} 2023 -- \en{Jun.}\sv{Juni} 2024}
+{\sv{Mjukvareutvecklare}\en{Full-time Software Developer}}{\sv{Göteborg}\en{Gothenburg}}
+\CVItemListStart
+\CVItem{\sv{Utvecklade frontend}\en{Developed software for configuration management of private 5G networks.}}
+\CVItemListEnd
+\CVSubheading
+{Ericsson}{\en{Summer}\sv{Sommaren} 2023 and 2025}
+{\sv{Mjukvareutvecklare pratikant}\en{Summer R\&D Internship}}{\sv{Göteborg}\en{Gothenburg}}
+% \CVItemListStart
+%   \CVItem{\sv{Utvecklade frontend}\en{Developed software for configuration management of private 5G networks.}}
+% \CVItemListEnd
+
+\CVSubheading
+{Chalmers Teknologkonsulter}{\en{Mar.}\sv{Mars} 2022 -- \sv{Juni}\en{Jun.} 2023}
+{\sv{IT-konsult}\en{IT consultant}}{\sv{Göteborg}\en{Gothenburg}}
+\CVItemListStart
+\CVItem{\sv{Agerade projektledare.}\en{Acted as project manager for teams delivering software products.}}
+\CVItem{\sv{Utvecklade en robot som utförde automatiska urintester.}\en{Developed both software and electrical components for mechatronic products.}}
+\CVItem{\sv{Utvecklade både backend och frontend för hemsidor och appar.}\en{Developed both backend and frontend for websites and apps.}}
+\CVItemListEnd
+
+% \CVSubheading
+%   {\sv{Vaktmästare/arbetsledare}\en{Facility Manager/Team Leader}}{2016 -- 2020 (\sv{Sommarmånaderna}\en{Summer months})}
+%   {BRF Halleskogen.}{Vänersborg}
+%   \CVItemListStart
+%     \CVItem{\sv{Agerade arbetsledare för 8 personer.}\en{Managed a team of 8 individuals.}}
+%     \CVItem{\sv{Ansvarde för områdets skötsel under sommartid.}\en{Oversaw maintenance of the area during the summer season.}}
+%   \CVItemListEnd
+
+\CVSubHeadingListEnd
+
+%-----PROJECTS AND RESEARCH----------------------------------------------------
+\begin{comment}
+Ideally the title of the work should speak for what it is. However if you feel
+like you should explain more about why the project is applicable to this job,
+use item list as is shown in the work experience section.
+\end{comment}
+
+%-----SKILLS-------------------------------------------------------------------
+\section{\sv{Färdigheter}\en{Skills}}
+\begin{itemize}[leftmargin=0.5cm, label={}]
+    \small{\item{
+          % \textbf{\sv{Språk}\en{Languages}}{: \sv{Svenska (Modersmål), Engelska}\en{Swedish(First language), English}} \\
+          \textbf{Programming}{: C/C++, Python, Golang, JavaScript/TypeScript(React) } \\
+          % \textbf{\sv{Dokument Hantering}\en{Document Management}}{: LaTex, Markdown, Microsoft Office Suite, \sv{Google Dokument}\en{Google Docs}} \\
+          }}
+\end{itemize}
+
+% \CVSubHeadingListStart
+% \CVSubheading
+%   {3D Multiplyer Pong  \href{https://dualsub.github.io/pong/}{[https://dualsub.github.io/pong/]}}{}
+%   \CVItem
+%   \textt{\sv{}\en{A 3D multiplayer implementation of the classic game Pong. The client was created using C++, compiled to WebAssembly using Emscripten. The server was written in Golang.}}
+%   \CVEndItemItem
+%   \CVItemListStart
+%     \CVItem{$Frontend: C++ (Emscripten)$}
+%     \CVItem{$Backend: Golang$}
+%   \CVItemListEnd
+% \CVSubHeadingListEnd
+\section{\sv{Personliga Projekt}\en{Personal Projects}}
+
+\CVSubHeadingListStart
+\CVSubheading
+{Antagningsoddset \href{https://dualsub.github.io/antagningsoddset/}{[dualsub.github.io/antagningsoddset/]}}{}
+\CVItem
+\textt{\sv{En hemsida som beräknar sannolikheten att bli antagen till olika universitetsprogram i Sverige. Data hämtad från UHR.}\en{A website that estimates the odds of admission to Swedish university programs by modeling the admission scores as a simple stochastic processes. Data sourced from UHR.}}
+\CVEndItemItem
+\CVItemListStart
+\CVItem{\textit{Frontend: JavaScript(React)}}
+\CVItem{\textit{\sv{Data: UHR antagningsstatistik}\en{Data: UHR admissions data}}}
+% \CVItem{$\sv{Metoder: Data Science}\en{Methods: Data Science}$} % optional
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\CVSubHeadingListStart
+\CVSubheading
+{Sök Tekniskt  \href{https://www.soktekniskt.se/}{[www.soktekniskt.se]}}{}
+\CVItem
+\textt{\sv{En hemsida som matchar en person till ett ingenjörsprogram baserat på deras intressen och meriter samt kan estimera sannolikheten att bli antagen till ett specifikt program. Baserat på data från över 8 000 kurser på 4 svenska universitet.}\en{A website that matches a person to an engineering program based on their interests and qualifications. The matching was calculated using clustering methods.}}
+% The website can also estimate the likelihood of being admitted to a specific program. 
+Based on data from over 8,000 courses at 4 Swedish universities.}}
+\CVEndItemItem
+\CVItemListStart
+\CVItem{\textit{Backend: Python(Flask)}}
+\CVItem{\textit{Frontend: JavaScript(React/Next.js)}}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\CVSubHeadingListStart
+\CVSubheading
+{Arcane Siege  \href{https://store.steampowered.com/app/3007620/Arcane_Siege/}{[https://steam.com/ArcaneSiege]}}{}
+\CVItem
+\textt{\sv{Ett spel med modern 3D grafik, helt skrivit från grunden i C++ utan använding av spelmotor eller biblotek. Den modernare grafik-API Vulkan användes för renderingen.}\en{A fully featured 3D game written from the ground up in C++ without the use of any game engine or similar. The modern graphics API, Vulkan, was used to produce physically-based rendered graphics.}}
+\CVEndItemItem
+\CVItemListStart
+\CVItem{\textit{C++}}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+% \CVSubHeadingListStart
+% \CVSubheading
+%   {Börsbot  \href{https://github.com/dualsub/trading}{[github.com/dualsub/trading]}}{}
+%   \CVItem
+%   \textt{Implementering av enkla analysmetoder för att förutspå bra köp/sälj-lägen för en aktie. B.l.a. AlphaVantages och Nordnets REST-api användes för att hämta aktie-data.}
+%   \CVEndItemItem
+%   \CVItemListStart
+%     \CVItem{$Python$}
+%   \CVItemListEnd
+% \CVSubHeadingListEnd
+% \CVSubHeadingListStart
+% \CVSubheading
+%   {\sv{Luffarschacks AI}\en{Checkers AI}  \href{https://github.com/dualsub/wisecheck}{[github.com/dualsub/wisecheck]}}{}
+%   \CVItem
+%   \textt{\sv{En implmentation av den kända schackroboten AlphaZero, adapterad för luffarschack.}\en{Implementation of the famous chess AI AlphaZero for checkers. Impelmented directly from the research paper released by DeepMind. Successfully created a working version of the algorithm and conducted tests to verify its effectiveness in playing checkers.}}
+%   \CVEndItemItem
+%   \CVItemListStart
+%     \CVItem{$C/C++$}
+%     \CVItem{$Python$}
+%   \CVItemListEnd
+% \CVSubHeadingListEnd
+
+
+%------------------------------------------------------------------------------
+\end{document}
