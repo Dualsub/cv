@@ -1,1 +1,10 @@
 out/
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.out
+*.pdf
+*.synctex.gz

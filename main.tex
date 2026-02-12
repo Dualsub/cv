@@ -1,4 +1,4 @@
-\documentclass[A4,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 %\documentclass[letterpaper,11pt]{article} %For use in US
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -9,6 +9,8 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{tabularx}
 \usepackage{tikz}
 \input{glyphtounicode}
@@ -57,8 +59,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that .pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -89,10 +91,10 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.3cm, label={}]}
 % \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} % Uncomment for US
 \newcommand{\CVSubHeadingListEnd}{\end{itemize}}
-\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}[leftmargin=0.55cm, itemsep=1pt, topsep=2pt]}
 \newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %------------------------------------------------------------------------------
@@ -101,19 +103,16 @@
 \begin{document}
 
 %-----HEADING------------------------------------------------------------------
-\begin{minipage}[c]{0.39\textwidth}
-    \textbf{\Huge \scshape{Simon Sjöling}} \\ \vspace{2pt}\\
-    % \scshape sets small capital letters, remove if desired
-    \small{Telefon: 076 346 76 49}\\
-    \href{mailto:simonsjoling@hotmail.com}{Mail: simonsjoling@hotmail.com}\\
-    \small{Adress: Gibraltarkroken 4, Göteborg, }\\
-    % \small{Personnmr: 010330-4713}\\
-    \href{https://github.com/Dualsub}{GitHub: https://github.com/Dualsub}\\
-    \href{https://www.linkedin.com/in/simon-sjoling/}{LinkedIn: linkedin.com/simon-sjoling/}
-\end{minipage}
-\begin{minipage}[c]{0.39\textwidth}
-    \-\
-\end{minipage}
+\begin{center}
+    \textbf{\Huge \scshape Simon Sj\"oling} \\ \vspace{4pt}
+    \small
+    076 346 76 49 \ $|$\
+    \href{mailto:simonsjoling@hotmail.com}{simonsjoling@hotmail.com} \ $|$\
+    Gibraltarkroken 4, G\"oteborg \\
+    \href{https://github.com/Dualsub}{github.com/Dualsub} \ $|$\
+    \href{https://www.linkedin.com/in/simon-sjoling/}{linkedin.com/in/simon-sjoling}
+\end{center}
+\vspace{-10pt}
 % \begin{minipage}[c]{0.2\textwidth}
 % \begin{tikzpicture}
 %     \clip (0,0) circle (1.75cm);
@@ -145,9 +144,10 @@
 \CVSubheading
 {{\sv{}\en{Data Science and AI} $|$ \emph{\small{\sv{Civilingenjör}\en{Master of Science}}}}}{Aug. 2024 -- \sv{nu}\en{now}}
 {\sv{Chalmers Tekniska Högskola}\en{Chalmers University of Technology}}{\sv{Göteborg}\en{Gothenburg}}\
-% \CVItemListStart
-%   \CVItem{\sv{}\en{Coursework: Applied Machine Learning; Design of AI Systems; Nonlinear Optimisation; Partial Differential Equations; Image Analysis; Introduction to Data Science & AI.}}
-% \CVItemListEnd
+\CVItemListStart
+\CVItem{\sv{}\en{M.Sc. thesis: Real-Time Neural Soft Shadow Rendering.}}
+% \CVItem{\sv{}\en{Coursework: Applied Machine Learning; Design of AI Systems; Nonlinear Optimisation; Partial Differential Equations; Image Analysis; Introduction to Data Science \& AI.}}
+\CVItemListEnd
 \CVSubheading
 {{\sv{Elektroteknik}\en{Electrical Engineering} $|$ \emph{\small{\sv{Civilingenjör}\en{Master of Science in Engineering}}}}}{Aug. 2020 -- \sv{nu}\en{now}}
 {\sv{Chalmers Tekniska Högskola}\en{Chalmers University of Technology}}{\sv{Göteborg}\en{Gothenburg}}\
@@ -219,15 +219,6 @@ like you should explain more about why the project is applicable to this job,
 use item list as is shown in the work experience section.
 \end{comment}
 
-%-----SKILLS-------------------------------------------------------------------
-\section{\sv{Färdigheter}\en{Skills}}
-\begin{itemize}[leftmargin=0.5cm, label={}]
-    \small{\item{
-          % \textbf{\sv{Språk}\en{Languages}}{: \sv{Svenska (Modersmål), Engelska}\en{Swedish(First language), English}} \\
-          \textbf{Programming}{: C/C++, Python, Golang, JavaScript/TypeScript(React) } \\
-          % \textbf{\sv{Dokument Hantering}\en{Document Management}}{: LaTex, Markdown, Microsoft Office Suite, \sv{Google Dokument}\en{Google Docs}} \\
-          }}
-\end{itemize}
 
 % \CVSubHeadingListStart
 % \CVSubheading
@@ -245,9 +236,8 @@ use item list as is shown in the work experience section.
 \CVSubHeadingListStart
 \CVSubheading
 {Antagningsoddset \href{https://dualsub.github.io/antagningsoddset/}{[dualsub.github.io/antagningsoddset/]}}{}
-\CVItem
-\textt{\sv{En hemsida som beräknar sannolikheten att bli antagen till olika universitetsprogram i Sverige. Data hämtad från UHR.}\en{A website that estimates the odds of admission to Swedish university programs by modeling the admission scores as a simple stochastic processes. Data sourced from UHR.}}
-\CVEndItemItem
+{}{}
+{\sv{En hemsida som beräknar sannolikheten att bli antagen till olika universitetsprogram i Sverige. Data hämtad från UHR.}\en{A website that estimates the odds of admission to Swedish university programs by modeling the admission scores as a simple stochastic process. Data sourced from UHR.}}
 \CVItemListStart
 \CVItem{\textit{Frontend: JavaScript(React)}}
 \CVItem{\textit{\sv{Data: UHR antagningsstatistik}\en{Data: UHR admissions data}}}
@@ -258,11 +248,8 @@ use item list as is shown in the work experience section.
 \CVSubHeadingListStart
 \CVSubheading
 {Sök Tekniskt  \href{https://www.soktekniskt.se/}{[www.soktekniskt.se]}}{}
-\CVItem
-\textt{\sv{En hemsida som matchar en person till ett ingenjörsprogram baserat på deras intressen och meriter samt kan estimera sannolikheten att bli antagen till ett specifikt program. Baserat på data från över 8 000 kurser på 4 svenska universitet.}\en{A website that matches a person to an engineering program based on their interests and qualifications. The matching was calculated using clustering methods.}}
-% The website can also estimate the likelihood of being admitted to a specific program. 
-Based on data from over 8,000 courses at 4 Swedish universities.}}
-\CVEndItemItem
+{}{}
+{\sv{En hemsida som matchar en person till ett ingenjörsprogram baserat på deras intressen och meriter samt kan estimera sannolikheten att bli antagen till ett specifikt program. Baserat på data från över 8 000 kurser på 4 svenska universitet.}\en{A website that matches a person to an engineering program based on their interests and qualifications. The matching was calculated using clustering methods based on data from over 8,000 courses at four Swedish universities.}}
 \CVItemListStart
 \CVItem{\textit{Backend: Python(Flask)}}
 \CVItem{\textit{Frontend: JavaScript(React/Next.js)}}
@@ -272,36 +259,23 @@ Based on data from over 8,000 courses at 4 Swedish universities.}}
 \CVSubHeadingListStart
 \CVSubheading
 {Arcane Siege  \href{https://store.steampowered.com/app/3007620/Arcane_Siege/}{[https://steam.com/ArcaneSiege]}}{}
-\CVItem
-\textt{\sv{Ett spel med modern 3D grafik, helt skrivit från grunden i C++ utan använding av spelmotor eller biblotek. Den modernare grafik-API Vulkan användes för renderingen.}\en{A fully featured 3D game written from the ground up in C++ without the use of any game engine or similar. The modern graphics API, Vulkan, was used to produce physically-based rendered graphics.}}
-\CVEndItemItem
+{}{}
+{\sv{Ett spel med modern 3D grafik, helt skrivet från grunden i C++ utan användning av spelmotor eller bibliotek. Den modernare grafik-API:n Vulkan användes för renderingen.}\en{A fully featured 3D game written from the ground up in C++ without the use of any game engine or similar framework. The modern graphics API Vulkan was used to produce physically based rendering.}}
 \CVItemListStart
 \CVItem{\textit{C++}}
 \CVItemListEnd
-\CVSubHeadingListEnd
+\CVSubHeadingListEnd %------------------------------------------------------------------------------ 
 
-% \CVSubHeadingListStart
-% \CVSubheading
-%   {Börsbot  \href{https://github.com/dualsub/trading}{[github.com/dualsub/trading]}}{}
-%   \CVItem
-%   \textt{Implementering av enkla analysmetoder för att förutspå bra köp/sälj-lägen för en aktie. B.l.a. AlphaVantages och Nordnets REST-api användes för att hämta aktie-data.}
-%   \CVEndItemItem
-%   \CVItemListStart
-%     \CVItem{$Python$}
-%   \CVItemListEnd
-% \CVSubHeadingListEnd
-% \CVSubHeadingListStart
-% \CVSubheading
-%   {\sv{Luffarschacks AI}\en{Checkers AI}  \href{https://github.com/dualsub/wisecheck}{[github.com/dualsub/wisecheck]}}{}
-%   \CVItem
-%   \textt{\sv{En implmentation av den kända schackroboten AlphaZero, adapterad för luffarschack.}\en{Implementation of the famous chess AI AlphaZero for checkers. Impelmented directly from the research paper released by DeepMind. Successfully created a working version of the algorithm and conducted tests to verify its effectiveness in playing checkers.}}
-%   \CVEndItemItem
-%   \CVItemListStart
-%     \CVItem{$C/C++$}
-%     \CVItem{$Python$}
-%   \CVItemListEnd
-% \CVSubHeadingListEnd
+%-----SKILLS-------------------------------------------------------------------
+\section{\sv{Färdigheter}\en{Skills}}
+\begin{itemize}[leftmargin=0.5cm, label={}]
+    \small{\item{
+          \textbf{\sv{Språk}\en{Languages}}{: \sv{Svenska (Modersmål), Engelska}\en{Swedish(First language), English}} \\
+          \textbf{Programming}{: C/C++, Rust, Python, Golang, JavaScript/TypeScript(React) } \\
+          % \textbf{\sv{Dokument Hantering}\en{Document Management}}{: LaTex, Markdown, Microsoft Office Suite, \sv{Google Dokument}\en{Google Docs}} \\
+          }}
+\end{itemize}
+%------------------------------------------------------------------------------ 
 
 
-%------------------------------------------------------------------------------
 \end{document}
