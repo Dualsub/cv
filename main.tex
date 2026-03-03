@@ -1,286 +1,30 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
+\documentclass[A4,11pt]{letter}
+\pagestyle{empty}
 
-\documentclass[a4paper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\bfseries\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
 
 
 \begin{document}
 
-%----------HEADING----------
-\begin{center}
-  \textbf{\Huge Simon Sj\"oling} \\ \vspace{4pt}
-  \small
-  \href{mailto:simonsjoling@hotmail.com}{simonsjoling@hotmail.com} \quad $|$ \quad
-  076 346 76 49 \quad $|$ \quad
-  Gibraltarkroken 4, G\"oteborg \\
-  \vspace{2pt}
-  \href{https://dualsub.github.io/simonsjoling/}{dualsub.github.io/simonsjoling}
-  \quad $|$ \quad
-  \href{https://www.linkedin.com/in/simon-sjoling/}{linkedin.com/in/simon-sjoling}
-  \quad $|$ \quad
-  \href{https://github.com/Dualsub}{github.com/Dualsub}
-\end{center}
+Dear Simon Olsson,
 
+My name is Simon Sjöling, and I'm applying for the doctoral student position in AI for Science. I'm currently finishing my master's thesis on real-time neural soft shadow rendering, which will be completed in June 2026, concluding five years of study at Chalmers University of Technology (M.Sc. in Data Science and AI, and B.Sc. in Electrical Engineering, Civilingenjör).
 
-%-----------EDUCATION-----------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Data Science and AI $|$ Master of Science}{Aug. 2024 - Present}
-{Chalmers University of Technology}{Gothenburg}
-\resumeItemListStart
-\resumeItem{M.Sc. thesis: Real-Time Neural Soft Shadow Rendering.}
-\resumeItemListEnd
+I have a strong interest in AI, especially the applications of such systems in different areas of science and technology. In my thesis, I'm exploring how to use neural networks to approximate physical phenomena such as lighting and shadows for computer graphics applications, bypassing slower traditional numerical methods. I think that the doctoral position at the AIMLeNS group presents a perfect opportunity for me to apply the same principles to the area of molecular simulations and inverse design, which I find very exciting.
 
-\resumeSubheading
-{Electrical Engineering $|$ Master of Science in Engineering}{Aug. 2020 - Present}
-{Chalmers University of Technology}{Gothenburg}
-\resumeItemListStart
-\resumeItem{B.Sc. thesis: Design, Manufacturing and Testing of 5G Antenna.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
+My bachelor's studies have given me a solid foundation in mathematics, physics, and computer science. During my master's, I have particularly focused on AI, through coursework and project work which has included researching, implementing, optimizing and evaluating AI systems. I have worked with reinforcement learning agents, CNNs for computer vision, transformers, and generative types like GANs and diffusion models, and I am comfortable with most modern ML frameworks. This work has to a large extent involved group projects, and I have really enjoyed such work, as I find working with like-minded people on complex problems to be very rewarding. During my work at Ericsson, I learned more about working on projects in larger teams, taking responsibility for deliverables and presenting results.
 
+Beyond machine learning, I have also chosen courses mainly in mathematics, such as Non-linear Optimization, Partial-Differential Equations, Stochastic Processes and Bayesian Inference, and financial mathematics, which have strengthened my mathematical understanding and advanced problem-solving skills. I have also taken High Performance Computing, which is valuable for running computationally demanding tasks efficiently, such as training large AI models.
 
-%-----------EXPERIENCE-----------
-\section{Experience}
-\resumeSubHeadingListStart
+Outside of school, I have always had a passion for tinkering with technology and software, which has resulted in numerous software implementations of RL agents, simple C++ and CUDA-based ML frameworks and more.
 
-\resumeSubheading
-{Ericsson}{Aug. 2023 - Jun. 2024}
-{Full-time Software Developer}{Gothenburg}
-\resumeItemListStart
-\resumeItem{Developed backend services and user interface for a locally deployed private 5G network configuration tool.}
-\resumeItem{Implemented and integrated CI/CD pipelines.}
-\resumeItemListEnd
+I am very excited at the prospect of contributing to the research of the AIMLeNS group and learn from experts in the field. I believe that my background could be a good starting point, and I am highly motivated to develop through doctoral research with this group.
 
-\resumeSubheading
-{Ericsson}{Summer 2023, Summer 2025}
-{Summer R\&D Internship}{Gothenburg}
-\resumeItemListStart
-\resumeItem{Developed a user interface for a cloud-based network configuration tool for private 5G.}
-\resumeItem{Built backend services for a cloud-based the network configuration tool.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Chalmers Teknologkonsulter}{Mar. 2022 - Jun. 2023}
-{IT consultant}{Gothenburg}
-\resumeItemListStart
-\resumeItem{Acted as project manager for teams delivering software products.}
-\resumeItem{Developed both software and electrical systems for mechatronic products.}
-\resumeItem{Developed both backend and frontend for websites and apps.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-
-% --- Networking / Systems (relevant for backend-ish and telecom adjacent roles) ---
-
-% \resumeProjectHeading
-% {\textbf{Icarus} $|$ \emph{C++, Game Networking} $|$ \href{https://streamable.com/kr6nop}{\underline{Gameplay video}}}{2025}
-% \resumeItemListStart
-% \resumeItem{Multiplayer demo with a server-client architecture, including client-side prediction and server reconciliation.}
-% \resumeItem{Built using my own game engine and renderer.}
-% \resumeItemListEnd
-
-% Alternative AI-focused version:
-\resumeProjectHeading
-{\textbf{Icarus} $|$ \emph{C++, AI, Networking} $|$ \href{https://youtu.be/I_DFSRGVTBE}{\underline{AI Demo video}}, \href{https://streamable.com/kr6nop}{\underline{Multiplayer Demo video}}}{2025}
-\resumeItemListStart
-\resumeItem{Third-person shooter prototype with COOP multiplayer.}
-\resumeItem{Navmesh-based pathfinding and an AI behavior tree system for enemy agents.}
-\resumeItem{Multiplayer server-client architecture with client-side prediction and server reconciliation.}
-\resumeItem{Built with a custom C++ game engine and Vulkan renderer.}
-\resumeItemListEnd
-
-% \resumeProjectHeading
-% {\textbf{Co-op Horde Shooter} $|$ \emph{Unreal Engine, C++, AI, Networking} $|$ \href{https://youtu.be/xLCfa2P3RWk}{\underline{Demo video}}}{2019}
-% \resumeItemListStart
-% \resumeItem{Third-person horde mode prototype with COOP multiplayer.}
-% \resumeItem{Enemy AI implemented with behavior trees.}
-% \resumeItem{Built core gameplay systems for wave spawning and combat.}
-% \resumeItemListEnd
-
-% \resumeProjectHeading
-% {\textbf{Multiplayer 3D Pong} $|$ \emph{C++, WebGPU, Go} $|$ \href{https://dualsub.github.io/pong/}{\underline{dualsub.github.io/pong}}}{Jan. 2024}
-% \resumeItemListStart
-% \resumeItem{Real-time game server written in Go; client written in C++ compiled to WebAssembly with Emscripten.}
-% \resumeItem{Graphics rendered using the WebGPU API.}
-% \resumeItemListEnd
-
-% --- Graphics / Rendering (highly relevant for game dev + GPU/graphics roles) ---
-\resumeProjectHeading
-{\textbf{Odin} $|$ \emph{C++, Vulkan, Neural Shadow Maps} $|$ \href{https://github.com/Dualsub/odin/}{\underline{github.com/Dualsub/odin}}}{Jan. 2026 -- Present}
-\resumeItemListStart
-\resumeItem{Real-time renderer and engine built from scratch for my M.Sc. thesis on neural soft shadow rendering.}
-\resumeItem{Trained CNN models to generate neural shadow maps and integrated lightweight real-time inference in the frame loop.}
-\resumeItem{Implemented GPU-driven rendering techniques including bindless rendering and GPU culling.}
-\resumeItemListEnd
-
-% \resumeProjectHeading
-% {\textbf{Vultron} $|$ \emph{C++, Vulkan, Graphics} $|$ \href{https://github.com/Dualsub/vultron/tree/ic-main}{\underline{github.com/Dualsub/vultron}}}{2024 -- Present}
-% \resumeItemListStart
-% \resumeItem{Physically-based 3D renderer featuring GPU skeletal animation and GPU particle systems.}
-% \resumeItem{Used as the rendering foundation across multiple game projects.}
-% \resumeItemListEnd
-
-% --- Shipped / Public-facing (strong signal for many roles) ---
-\resumeProjectHeading
-{\textbf{Arcane Siege} $|$ \emph{C++, Game Development} $|$ \href{https://youtu.be/IXce1anHzRI}{\underline{Gameplay video}}, \href{https://store.steampowered.com/app/3007620/Arcane_Siege/}{\underline{Steam page}}}{2024 -- 2025}
-\resumeItemListStart
-\resumeItem{Action top-down shooter roguelike featuring combat, upgrades and permanent progression.}
-\resumeItem{Built with a custom C++ game engine and Vulkan renderer.}
-\resumeItem{Demo released on Steam.}
-\resumeItemListEnd
-
-% --- Web / Data (relevant for Ericsson + general SWE roles) ---
-% \resumeProjectHeading
-% {\textbf{S\"ok Tekniskt} $|$ \emph{React, Python, Data Science} $|$ \href{https://www.soktekniskt.se}{\underline{www.soktekniskt.se}}}{2022}
-% \resumeItemListStart
-% \resumeItem{Website that matches users to engineering programs in Sweden.}
-% \resumeItem{Data collected from UHR.}
-% \resumeItemListEnd
-
-% \resumeProjectHeading
-% {\textbf{Antagningsoddset} $|$ \emph{React, Data Science} $|$ \href{https://dualsub.github.io/antagningsoddset/}{\underline{dualsub.github.io/antagningsoddset}}}{Jun. 2023}
-% \resumeItemListStart
-% \resumeItem{Website that calculates odds of admission to Swedish university programs.}
-% \resumeItem{Data collected from UHR.}
-% \resumeItemListEnd
-
-% --- Game jam / smaller games (use when applying for game dev; otherwise comment out) ---
-% \resumeProjectHeading
-%   {\textbf{Rusty Rift} $|$ \emph{Rust, WGPU, Game Development} $|$ \href{https://github.com/Dualsub/rusty-rift/}{\underline{github.com/Dualsub/rusty-rift}}}{Dec. 2025 -- Present}
-% \resumeItemListStart
-%   \resumeItem{Web-based MOBA implemented with a custom engine and WGPU renderer in Rust; early development.}
-% \resumeItemListEnd
-%
-\resumeProjectHeading
-{\textbf{LUX} $|$ \emph{C++, Game Development} $|$ \href{https://dualsub.itch.io/LUX}{\underline{dualsub.itch.io/LUX}}}{Nov. 2025}
-\resumeItemListStart
-\resumeItem{Melee-based game focused on reflecting enemy projectiles; submission for the 2025 GameOff Game Jam.}
-\resumeItem{Built using my own game engine and renderer.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Helix Holdout} $|$ \emph{C++, Game Development} $|$ \href{https://dualsub.itch.io/helix-holdout}{\underline{dualsub.itch.io/helix-holdout}}}{Aug. 2025}
-\resumeItemListStart
-\resumeItem{Top-down shooter / tower-defence game; submission for the 2025 GMTK Game Jam.}
-\resumeItem{Built using my own game engine and renderer.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{The Last Garden} $|$ \emph{C++, Game Development} $|$ \href{https://dualsub.itch.io/the-last-garden}{\underline{dualsub.itch.io/the-last-garden}}}{Mar. 2025}
-\resumeItemListStart
-\resumeItem{First-person shooter; submission for the Brackeys 2025.1 Game Jam.}
-\resumeItem{Built using my own game engine and renderer.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-%-----------SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-        \textbf{Languages}{: Swedish (native), English} \\
-        \textbf{Programming languages}{: C/C++, Python, Rust, Go, JavaScript/TypeScript (React)} \\
-        \textbf{Game Engines}{: Unreal Engine and custom engines} \\
-        \textbf{Graphics APIs}{: Vulkan, WebGPU, OpenGL} \\
-        }}
-\end{itemize}
+Best regards,\\
+Simon Sjöling
 
 \end{document}
