@@ -1,55 +1,20 @@
-<!-- Hello,
+Dear Hiring Committee,
 
-My name is Simon Sjöling, and I'm applying for the Gameplay AI / ML Engineer role. I live in Gothenburg currently and am open to relocating to Stockholm. I'm currently in the process of writing my masters thesis about real-time neural soft shadow rendering(i.e. rendering shadows with ML) which will be completed on June 10.
+My name is Simon Sjöling, and I am applying for the doctoral student position in reinforcement learning in agent-based models at KTH Royal Institute of Technology. I am currently completing my M.Sc. in Data Science and AI at Chalmers University of Technology, where my thesis investigates real-time neural soft shadow rendering, and I expect to graduate in June 2026. My background combines machine learning, mathematics, programming, and complex systems through studies in both Data Science and AI and Electrical Engineering.
 
-This role feels like a perfect fit for me, since it perfectly blends my two biggest interests of AI/ML, which I have specialized in during my masters studies, and game programming, which I have learned by creating tons of projects in Unreal and mostly in my custom game engines.
+I want to pursue doctoral studies because I enjoy working on difficult open-ended problems where theory, modelling, and implementation meet. This project is especially appealing to me because it combines reinforcement learning, agent-based modelling, and behavioural theory in a way that can contribute to understanding and supporting more sustainable transport choices. I find the Theory of Planned Behaviour framework and the idea of bounded-rational, adaptive agents particularly interesting, since they connect learning, attitudes, social influence, and structural incentives. I am motivated by research that connects individual-level adaptation to system-level outcomes.
 
-In my studies I have had dozens of courses involving programming, training, evaluating and optimizing AI models of all kinds, including reinforcement learning, CNNs for computer vision, transformers, and generative types like GANs and diffusion models. This work has mainly been done in Python using ML frameworks such as PyTorch and TensorFlow. I've also had many math courses to get a better understanding of the underlying optimization and statistical theory.
+During my master’s studies, I have built a strong foundation in AI and computational modelling through coursework including Applied Machine Learning, Advanced Probabilistic Machine Learning, Design of AI Systems, Stochastic Processes and Bayesian Inference, Nonlinear Optimisation, High Performance Computing, Computer Vision, and Image Analysis. Through these courses and associated projects, I have implemented, trained, optimised, and evaluated machine learning systems using Python and modern scientific computing tools. This has given me strong practical experience with experimentation, probabilistic reasoning, optimisation, and data-driven modelling.
 
-Outside of my studies, I have always been writing games in C++. Over the last few years I have focused on building games and prototypes in my own C++ engine, which has resulted in several projects, including a top-down shooter with state machine AI and flow field pathfinding, a third-person multiplayer shooter with a custom blend tree system and NavMesh-based AI navigation. I have also previously built similar projects in Unreal Engine, including enemy AI behavior implementations, which is where I was first introduced to C++ programming, so I’m very familiar with both the editor and the C++ API.
+I have also developed hands-on experience in reinforcement learning through projects including a Deep Q-Learning implementation for Pacman and a MuZero implementation for Othello, based on seminal reinforcement learning literature. These projects strengthened my understanding of sequential decision-making, adaptive agents, planning, and learning through repeated interaction with an environment. While my previous work has not been in transport science specifically, I am strongly motivated by the opportunity to apply these methods to behavioural and societal systems, and I am especially interested in theory-driven models that can explain behavioural change rather than merely predict it.
 
-I'm particularly interested in this role since I'm a very big fan of the amazing games, but also of the technical innovation at Embark. The RL based location and animation systems seen in Arc Raider has been really inspiring to read about. I also find the focus on tooling around the game engine, such as the many open-source Rust projects, really cool and exciting, as I also enjoy Rust. I would love to contribute and be a part of these amazing aspects of the work at the studio.
+My thesis work has further strengthened my research skills. It involves designing experiments, building data generation and training pipelines, comparing alternative methods systematically, and evaluating performance and generalisation under different conditions. I enjoy the full research process: formulating questions, translating them into implementable models and experiments, and iterating based on empirical evidence. I believe this fits well with doctoral research in agent-based modelling and reinforcement learning.
 
-If you were to consider me for this role, I believe I can bring a strong technical breadth across C++, Unreal, and applied ML, along with a lot of enthusiasm and drive for technical innovation in games and a focus on delivering high quality results.
+In addition to my machine learning work, I bring strong programming experience in Python and C++. During my work at Ericsson, I contributed to backend services, user interfaces, and CI/CD pipelines in a professional team environment. This strengthened my ability to work independently, collaborate effectively, communicate clearly, and take responsibility for deliverables. I also have experience working with publicly available data in personal projects, which has strengthened my interest in connecting computational methods with real-world data sources.
 
-For a better overview of my projects, please see my personal website: https://dualsub.github.io/simonsjoling/
+In the long term, I want to work with research and development of intelligent systems for complex real-world decision problems. I see this doctoral position as an excellent opportunity to deepen my methodological foundation while contributing to research with clear societal relevance. I would be very excited to join KTH and contribute to this work.
+
+Thank you for considering my application.
 
 Best regards,
 Simon Sjöling
-
-M.Sc. in Data Science and AI, and B.Sc. in Electrical Engineering (Civilingenjör) from Chalmers University of Technology -->
-
-<!-- Hello,
-
-My name is Simon Sjöling, and I'm applying for the Engine Graphics Programmer role. I live in Gothenburg and am open to relocating to Stockholm. I'm currently finishing my master’s thesis on real-time neural soft shadow rendering, which will be completed on June 10, 2026, concluding five years of study at Chalmers University of Technology (M.Sc. in Data Science and AI, and B.Sc. in Electrical Engineering, Civilingenjör).
-
-My studies have given me a solid foundation in mathematics, physics, and computer science. In my master’s, I focused on AI and optimization, combining theory with hands-on work building, training, and evaluating ML systems.
-
-Outside of my studies, I’ve spent years building C++ game engines and games. Over the last few years I have focused on building games and prototypes in my own C++ engine, including:
-* A multiplayer third-person shooter with AI enemies using NavMesh-based pathfinding and a custom behavior tree system (AI: https://youtu.be/I_DFSRGVTBE, https://streamable.com/kr6nop).
-* An action top-down shooter roguelike featuring combat, upgrades, and permanent progression (Gameplay: https://youtu.be/IXce1anHzRI, Steam Page: https://store.steampowered.com/app/3007620/Arcane_Siege/).
-* Smaller game jam projects (https://dualsub.itch.io/LUX, https://dualsub.itch.io/helix-holdout, https://dualsub.itch.io/the-last-garden).
-These were built on a custom game engine framework with a Vulkan renderer featuring PBR, skeletal animation, compute-shader particles, and bloom. For my thesis I’m writing a new engine and renderer (Vulkan, with WebGPU planned) that focuses on GPU-driven rendering, including bindless rendering, GPU culling, and LOD selection. I’m also exploring advanced shadowing techniques such as neural shadow mapping. For a better overview of my projects, please see my personal website: https://dualsub.github.io/simonsjoling/
-
-At Ericsson, I gained experience shipping software in a larger agile team. I owned features end-to-end, participated in code review and CI/CD workflows, and debugged issues reported by testers and customers.
-
-I’m a big fan of Paradox from a technical point of view because the problem space is uniquely challenging, with deep AI, UI, and systems-driven gameplay. I’d love to contribute to your engine team, and I believe I could get up to speed quickly, implement high-quality graphics features in C++, and collaborate well while taking ownership of quality and deadlines.
-
-I have attached my CV and grades.
-
-Best regards,
-Simon Sjöling -->
-
-Hello,
-
-My name is Simon Sjöling, and I'm applying for Doctoral students position in AI for Science. I'm currently finishing my master’s thesis on real-time neural soft shadow rendering, which will be completed in June, 2026, concluding five years of study at Chalmers University of Technology (M.Sc. in Data Science and AI, and B.Sc. in Electrical Engineering, Civilingenjör).
-
-My bachlor studies have given me a solid foundation in mathematics, physics, and computer science. During my masters, I have particuarly focused on AI, since I find the field very interesting, as it is rapidly evolving. My course work in the field has been wide, researching, implementing, optimzing and evaluating AI systems, such as. and I have also gained a solid theoretical understanding of machine learning systems.
-
-Beyond this, I have also chosen courses in mathematics, such as Non-linear Optimization, Partial-Differential Equations, Stochastic Processes and Baysian Inference, and financial mathematics, which has strengthed my mathematical understanding and advanced problem solving skills. I have also taken High Perfromance Computing, which is valuable for running computationally demanding tasks efficently. 
-
-My course work has to a large extent involved group projects, and I have really enjoyed such work. I find working with like-minded people on complex problems to be very rewarding. Furthermore, during my work at Ericsson, I learned more about working on larger project in a team, taking resposibility for executing work, presenting the results and so on.
-
-Outside of school, I have always had a passion for tinkering with technology and software, which has resulted in numerous software implementations of RL agenets, simple C++ and CUDA-based ML frameworks
-
-I think that the research at the AIMLeNS group is 
